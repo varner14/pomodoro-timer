@@ -1,3 +1,7 @@
 export function History() {
-  return <h1>history</h1>
+  return (
+    <div>
+      <span>History</span>
+    </div>
+  )
 }
