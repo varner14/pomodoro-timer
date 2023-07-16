@@ -27,6 +27,7 @@ export const FormContainer = styled.div`
   font-weight: bold;
   flex-wrap: wrap;
 `
+
 const BaseInput = styled.input`
   background: transparent;
   height: 2.5rem;
@@ -36,6 +37,7 @@ const BaseInput = styled.input`
   font-size: 1.125rem;
   padding: 0 0.5rem;
   color: ${(props) => props.theme['gray-100']};
+
   &:focus {
     box-shadow: none;
     border-color: ${(props) => props.theme['green-500']};
@@ -56,19 +58,6 @@ export const TaskInput = styled(BaseInput)`
 
 export const MinutesAmountInput = styled(BaseInput)`
   width: 4rem;
-`
-
-export const CreateAdBanner = styled.div`
-  width: 100%;
-  margin: 5rem 0;
-  padding: 2.5rem 1.5rem;
-  border-radius: 8px;
-  background: ${(props) => props.theme['gray-800']};
-  color: ${(props) => props.theme['gray-100']};
-  line-height: 1.6;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 `
 
 export const CountdownContainer = styled.div`
@@ -101,17 +90,18 @@ export const StartCountdownButton = styled.button`
   border: 0;
   padding: 1rem;
   border-radius: 8px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   gap: 0.5rem;
   font-weight: bold;
+
   cursor: pointer;
 
-  color: ${(props) => props.theme['gray-100']};
   background: ${(props) => props.theme['green-500']};
-
-  transition: background-color 0.2s;
+  color: ${(props) => props.theme['gray-100']};
 
   &:disabled {
     opacity: 0.7;
